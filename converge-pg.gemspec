@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Converge::Pg::VERSION
   spec.authors       = ["Ed Carrel"]
   spec.email         = ["edward@carrel.org"]
-  spec.summary       = %q{Data merger for Postgres}
+  spec.summary       = %q{Data merger for PostgreSQL}
   spec.description   = %q{Data merger}
-  spec.homepage      = "https://github.com/azanar/converge"
+  spec.homepage      = "https://github.com/azanar/converge-pg"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,13 +19,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'pg'
-  spec.add_runtime_dependency 'converge'
-  spec.add_runtime_dependency 'hydrogen'
-  spec.add_runtime_dependency 'activesupport'
+  spec.add_runtime_dependency 'converge', '~> 0'
+  spec.add_runtime_dependency 'activesupport', '~> 4'
 
-  spec.add_development_dependency 'test-unit'
-  spec.add_development_dependency 'mocha' 
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'test-unit', '~> 3'
+  spec.add_development_dependency 'mocha', '~> 1'
+  spec.add_development_dependency 'simplecov', '~> 0'
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
 end

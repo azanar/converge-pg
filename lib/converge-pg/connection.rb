@@ -33,7 +33,8 @@ module Converge
 
       def run_command_with_retry(cmd)
         run_command(cmd)
-      rescue
+      rescue => e
+        Converge.logger.warn("Caught #{e.message}")
         @conn.reset
         run_command(cmd)
       end
