@@ -4,8 +4,8 @@ env:
   global:
     - COVERAGE=true
   matrix:
-    - TEST_SUITE=unit
     - TEST_SUITE=integration
+    - TEST_SUITE=functional
 
 addons:
   postgresql: "9.3"
