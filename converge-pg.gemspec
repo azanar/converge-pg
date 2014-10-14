@@ -6,6 +6,7 @@ require 'converge-pg/version'
 Gem::Specification.new do |spec|
   spec.name          = "converge-pg"
   spec.version       = Converge::Pg::VERSION
+  spec.platform      = "ruby"
   spec.authors       = ["Ed Carrel"]
   spec.email         = ["edward@carrel.org"]
   spec.summary       = %q{Data merger for PostgreSQL}
@@ -18,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'pg'
+  spec.add_runtime_dependency 'pg', '~> 0'
   spec.add_runtime_dependency 'converge', '~> 0'
   spec.add_runtime_dependency 'activesupport', '~> 4'
 
