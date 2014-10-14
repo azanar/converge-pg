@@ -11,7 +11,7 @@ addons:
   postgresql: "9.3"
 
 before_script:
-  - psql -c 'create database converge_sink;' -U postgres
+  - psql -c 'create database converge_test;' -U postgres
 
 script: "bundle exec rake test:$TEST_SUITE"
 
