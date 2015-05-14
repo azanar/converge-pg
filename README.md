@@ -1,4 +1,10 @@
-# Converge
+[![Gem Version](https://badge.fury.io/rb/converge-pg.png)](http://badge.fury.io/rb/converge-pg)
+[![Build Status](https://travis-ci.org/azanar/converge-pg.png?branch=master)](https://travis-ci.org/azanar/converge-pg)
+[![Code Climate](https://codeclimate.com/github/azanar/converge-pg.png)](https://codeclimate.com/github/azanar/converge-pg)
+[![Coverage Status](https://coveralls.io/repos/azanar/converge-pg/badge.png?branch=master)](https://coveralls.io/r/azanar/converge-pg?branch=master)
+[![Dependency Status](https://gemnasium.com/azanar/converge-pg.png)](https://gemnasium.com/azanar/converge-pg)
+
+# Converge-PG
 
 Data merger for PostgreSQL
 
@@ -10,7 +16,7 @@ Built on top of [Converge](http://github.com/azanar/converge)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'converge-rs'
+gem 'converge-pg'
 ```
 
 And then execute:
@@ -19,7 +25,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install converge-rs
+    $ gem install converge-pg
 
 ## Usage
 
